@@ -1,0 +1,160 @@
+.top-controls {
+    width: 80%;
+    text-align: right;
+    margin: 0 auto;
+    padding-right: 20px;
+}
+
+.export-button {
+    background-color: #f02e7d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+.table-container {
+    padding: 0.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    display: flex;
+    flex-flow: column;
+    min-height: 70vh;
+    max-height: 70vh;
+    width: 80%;
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    font-size: 14px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+}
+
+table thead {
+    flex: 0 0 auto;
+    width: calc(100% - 3px);
+    background-color: rgb(2, 2, 36);
+    color: white;
+}
+
+table thead tr th {
+    padding: 8px 5px;
+}
+
+table tbody {
+    flex: 1 1 auto;
+    display: block;
+    overflow-y: scroll;
+}
+
+table tbody::-webkit-scrollbar {
+    width: 3px;
+}
+
+table tbody::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 3px solid rgb(172, 172, 172);
+}
+
+table tbody tr {
+    width: 100%;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table thead, table tbody tr {
+    display: table;
+    table-layout: fixed;
+}
+
+table td, table th {
+    padding: 0.3em;
+    border-bottom: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    text-align: left;
+}
+
+table td.green {
+    border-left: 2px solid green;
+    background-color: rgba(221, 255, 170, 0.4);
+}
+
+table td.red {
+    border-left: 2px solid red;
+    background-color: rgba(255, 165, 165, 0.4);
+}
+
+.table-footer {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-size: 12px;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid lightgray;
+}
+
+.page-no-control {
+    display: flex;
+}
+
+.page-change-button {
+    font-size: 14px;
+    padding: 2px 9px;
+    background-color: rgb(2, 2, 36);
+    color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.page-change-button.disabled {
+    opacity: 0.3;
+}
+
+.page-change-button.disabled:hover {
+    cursor: default;
+}
+
+.page-change-button:hover {
+    cursor: pointer;
+}
+
+.page-size-control-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-size-control-wrapper p {
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 0 0 20px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+select {
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid lightgray;
+    width: 40px;
+}
+
+select:focus {
+    outline: none !important;
+    border: 1px solid rgb(2, 2, 36);
+}

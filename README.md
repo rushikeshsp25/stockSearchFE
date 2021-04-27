@@ -1,4 +1,4 @@
-# bhavcopy-fe
+# stock-search-fe
 
 ## Project setup
 ```
